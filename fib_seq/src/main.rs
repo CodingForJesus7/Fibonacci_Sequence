@@ -10,4 +10,8 @@ fn main() {
 
     let sel: [i32; 8] = [0, 1, 1, 2, 3, 5, 8, 13];
     //"sel" is short for selection of the Fibonacci sequence
+
+    fib()
 }
+
+fn fib() {}
