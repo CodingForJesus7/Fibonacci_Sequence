@@ -8,10 +8,16 @@ fn main() {
 
     let input: i32 = input.trim().parse().expect("Input was NOT a number");
 
-    let sel: [i32; 8] = [0, 1, 1, 2, 3, 5, 8, 13];
-    //"sel" is short for selection of the Fibonacci sequence
-
     fib()
 }
 
-fn fib() {}
+fn fib() {
+    loop {
+    //Fibonacci Logic here
+    let mut old = new; //Move new value to old value
+    let mut new = //The new value;
+    
+    }
+}
+
+//Grok Guide: https://grok.com/c/ee6c9144-bf9c-4888-a771-f610fc956cdf?rid=365371a2-4ac8-4740-a12d-f654ec432515
