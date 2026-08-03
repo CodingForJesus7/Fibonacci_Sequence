@@ -1,23 +1,29 @@
 use std::io;
 fn main() {
-    let mut input = String::new();
-
+    println!("Input first number:");
+    let mut input1 = String::new();
     io::stdin()
-        .read_line(&mut input)
+        .read_line(&mut input1)
         .expect("Failed to read line");
+    let a: i32 = input1.trim().parse().expect("Input was NOT a number");
 
-    let input: i32 = input.trim().parse().expect("Input was NOT a number");
+    println!("Input second number:");
+    let mut input2 = String::new();
+    io::stdin()
+        .read_line(&mut input2)
+        .expect("Failed to read line");
+    let b: i32 = input2.trim().parse().expect("Input was NOT a number");
 
-    fib()
+    // fib()
 }
 
-fn fib() {
-    loop {
-    //Fibonacci Logic here
-    let mut old = new; //Move new value to old value
-    let mut new = //The new value;
-    
-    }
-}
+//fn fib() {
+//  loop {
+//Fibonacci Logic here
+//let mut old = new; //Move new value to old value
+//let mut new = //The new value;
+
+//}
+//}
 
 //Grok Guide: https://grok.com/c/ee6c9144-bf9c-4888-a771-f610fc956cdf?rid=365371a2-4ac8-4740-a12d-f654ec432515
