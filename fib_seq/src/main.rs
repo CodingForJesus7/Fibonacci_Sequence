@@ -1,3 +1,5 @@
+//Handle user input error (Have the program ask for another nth if the user inputs an invalid
+//character (better than the program crashing after an invalid input))
 use std::io;
 fn main() {
     println!(
