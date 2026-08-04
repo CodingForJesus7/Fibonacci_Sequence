@@ -1,5 +1,3 @@
-//Delete input 1 & 2 and have the user only input the nth. The Fibonacci Sequence only starts with..
-//0 & 1 (not whichever two numbers you decide to start with).
 use std::io;
 fn main() {
     println!(
@@ -15,6 +13,8 @@ fn main() {
 
     loop {
         counter += 1;
+
+        println!("{counter}");
     }
 }
 //Grok Guide: https://grok.com/c/ee6c9144-bf9c-4888-a771-f610fc956cdf?rid=365371a2-4ac8-4740-a12d-f654ec432515
