@@ -3,7 +3,7 @@
 use std::io;
 fn main() {
     println!(
-        "Input an nth (e.g. '3' (the third number in order of the Fibonacci Sequence will be 1)))"
+        "Input an nth (e.g. '3' (the third number in order of the Fibonacci Sequence will be 1))"
     );
     let mut input = String::new();
     io::stdin()
@@ -11,7 +11,7 @@ fn main() {
         .expect("Failed to read line.");
     let input: i32 = input.trim().parse().expect("Error: Please type a number");
 
-    let mut counter = 0;
+    let mut counter = 2;
 
     let mut a = 0;
 
@@ -21,19 +21,26 @@ fn main() {
     let mut c = 0;
 
     loop {
-        if { input } == 1 {
-            println!("1 is the {input} nth");
+        if { input } == 1 || { input } == 2 {
+            if { input } == 1 {
+                println!("0 is the {input} nth");
 
-            break;
+                break;
+            }
+            if { input } == 2 {
+                println!("1 is the {input} nth");
+
+                break;
+            }
         } else {
             b = a + b;
             a = b - a;
 
-            println!("{b} is the {input} nth");
-
             counter += 1;
 
             if counter == { input } {
+                println!("{b} is the {input} nth");
+
                 break;
             }
         }
