@@ -17,6 +17,10 @@ fn main() {
         counter += 1;
 
         println!("{counter}");
+
+        if counter == 50 {
+            break;
+        }
     }
 }
 //Grok Guide: https://grok.com/c/ee6c9144-bf9c-4888-a771-f610fc956cdf?rid=365371a2-4ac8-4740-a12d-f654ec432515
