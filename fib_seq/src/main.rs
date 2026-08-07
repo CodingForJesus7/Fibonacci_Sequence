@@ -13,12 +13,22 @@ fn main() {
 
     let mut counter = 0;
 
+    let mut a = 0;
+
+    let mut b = 1;
+
+    //I gave c the value of 0 as a placeholder
+    let mut c = 0;
+
     loop {
         counter += 1;
 
-        println!("{counter}");
+        b = a + b;
+        a = b - a;
 
-        if counter == 50 {
+        println!("a is {a} and b is {b}");
+
+        if counter == { input } {
             break;
         }
     }
