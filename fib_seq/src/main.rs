@@ -18,7 +18,14 @@ fn main() {
         if { input } == "q" {
             break;
         }
-        let input: i32 = input.trim().parse().expect("Error: Please type a number");
+
+        let input: i32 = match input.parse() {
+            Ok(number) => number,
+            Err(_) => {
+                println!("Please type a number (or 'q' to quit)");
+                continue;
+            }
+        };
 
         let mut counter = 2;
 
