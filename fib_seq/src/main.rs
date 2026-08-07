@@ -1,7 +1,3 @@
-//Handle user input error (Have the program ask for another nth if the user inputs an invalid
-//character (better than the program crashing after an invalid input))
-
-//Have program go back to starter prompt after each outputted nth
 use std::io;
 fn main() {
     loop {
@@ -19,7 +15,7 @@ fn main() {
             break;
         }
 
-        let input: i32 = match input.parse() {
+        let input: i128 = match input.parse() {
             Ok(number) => number,
             Err(_) => {
                 println!("Please type a number (or 'q' to quit)");
@@ -27,14 +23,19 @@ fn main() {
             }
         };
 
-        let mut counter = 2;
+        let mut counter: i128 = 2;
 
-        let mut a = 0;
+        let mut a: i128 = 0;
 
-        let mut b = 1;
+        let mut b: i128 = 1;
 
         //I gave c the value of 0 as a placeholder
         let mut c = 0;
+
+        if input > 185 {
+            println!("Your inputted number is too large (Max = 185)");
+            continue;
+        }
 
         loop {
             if { input } == 1 || { input } == 2 {
