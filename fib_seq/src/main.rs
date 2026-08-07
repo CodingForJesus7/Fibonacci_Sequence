@@ -21,15 +21,21 @@ fn main() {
     let mut c = 0;
 
     loop {
-        counter += 1;
+        if { input } == 1 {
+            println!("1 is the {input} nth");
 
-        b = a + b;
-        a = b - a;
-
-        println!("a is {a} and b is {b}");
-
-        if counter == { input } {
             break;
+        } else {
+            b = a + b;
+            a = b - a;
+
+            println!("{b} is the {input} nth");
+
+            counter += 1;
+
+            if counter == { input } {
+                break;
+            }
         }
     }
 }
