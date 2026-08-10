@@ -15,7 +15,7 @@ fn main() {
             break;
         }
 
-        let input: i128 = match input.parse() {
+        let input: u128 = match input.parse() {
             Ok(number) => number,
             Err(_) => {
                 println!("Please type a number (or 'q' to quit)");
@@ -23,11 +23,11 @@ fn main() {
             }
         };
 
-        let mut counter: i128 = 2;
+        let mut counter: u128 = 2;
 
-        let mut a: i128 = 0;
+        let mut a: u128 = 0;
 
-        let mut b: i128 = 1;
+        let mut b: u128 = 1;
 
         //I gave c the value of 0 as a placeholder
         let mut c = 0;
